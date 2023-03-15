@@ -24,10 +24,12 @@ html {
         }
 
         margin: 0px;
-        background-color: #F8F8F8;
+        background-color: $black-600;
+        color: $grey-100;
 
         h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, span, p {
-            color: #333333;
+            font-family: 'Inter', sans-serif;
+            color: $grey-100;
         }
 
         .font-poppin-bold {
@@ -51,10 +53,21 @@ html {
             text-decoration: unset !important;
         }
 
+        a {
+            text-decoration: none;
+            color: $grey-100;
+        }
+
         // font size 
         .text-22 {
             font-size: 22px;
             font-weight: 400;
+            font-style: normal;
+        }
+
+        .text-20 {
+            font-size: 20px;
+            font-weight: 600;
             font-style: normal;
         }
     }
