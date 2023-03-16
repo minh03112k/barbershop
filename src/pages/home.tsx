@@ -17,11 +17,8 @@ export default function Home() {
   ];
 
   return (
-    <Box sx={{width: '100vw', height: '100vh', position: 'fixed'}} >
-      <Carousel sx={{width: '100%', height: '100%'}}>
-        <Image src={'/img/img/barber-img.png'} fill alt="img" />
-        <Image src={'/img/img/barbershop.png'} fill alt="img" />
-      </Carousel>
+    <Box sx={{width: '100vw', minHeight: '100vh'}} >
+      
     </Box>
   );
 }
