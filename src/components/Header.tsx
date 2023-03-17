@@ -8,8 +8,8 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <Box className={`${styles.header} bg-dark px-5`}>
-      <Box className="d-flex align-items-center justify-content-between container-fluid">
+    <Box  id="header" className={`${styles.header} bg-dark px-5`}>
+      <Box className="d-flex align-items-center justify-content-between">
         <Box>Brand</Box>
         <ul className="d-flex flex-row align-items-center m-0" style={{listStyleType: 'none'}}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
