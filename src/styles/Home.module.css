@@ -1,0 +1,14 @@
+.productContainer {
+  transition: transform 0.2s, box-shadow 0.2s;
+  max-width: 500;
+  flex-grow: 1;
+  background-color: #202020;
+  box-sizing: 0px 2px 2px #0B101C;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.productContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px #0B101C;
+}

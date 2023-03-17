@@ -4,4 +4,39 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-direction: row;
+  margin: 0;
+}
+
+.headerMenu li {
+  margin: 0 1rem;
+}
+
+.headerMenu li a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+
+}
+
+.headerMenu li a:hover {
+  color: #FA3434;
+  background-color: #505050;
+  border-radius: 0.5rem; 
+  padding: 0.5rem 1rem;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.headerMenu li a:hover:hover {
+  background-color: #3e3e3e;
+}
+
