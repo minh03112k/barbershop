@@ -13,7 +13,7 @@
 .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .separator:not(:empty)::before {
@@ -25,10 +25,12 @@
 }
 
 .customBox {
+    background: #505050;
     transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .customBox:hover {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     transform: translate(-2px, -2px);
 }
