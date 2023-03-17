@@ -13,34 +13,36 @@ const Header = () => {
         <Box>Brand</Box>
         <ul className={`${styles.headerMenu}`}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
-          <li className="">
-            <Link className={router.asPath.includes('home') ? 'text-danger text-20' : 'text-20'} href={'#'}>
+          <li>
+            <Link className={`${router.asPath.includes('home') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'home'}>
               Home
             </Link>
           </li>
-          <li className="">
-            <Link className={router.asPath.includes('book') ? 'text-danger text-20' : 'text-20'} href={'#'}>
-              Book
+          <li>
+            <Link className={`${router.asPath.includes('booking') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'booking'}>
+              Booking
             </Link>
           </li>
-          <li className="">
-            <Link className={router.asPath.includes('shop') ? 'text-danger text-20' : 'text-20'} href={'#'}>
+          <li>
+            <Link className={`${router.asPath.includes('shop') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
               Shop
             </Link>
           </li>
-          <li className="">
-            <Link className={router.asPath.includes('gallery') ? 'text-danger text-20' : 'text-20'} href={'#'}>
+          <li>
+            <Link className={`${router.asPath.includes('gallery') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'gallery'}>
               Gallery
             </Link>
           </li>
-          <li className="">
-            <Link className={router.asPath.includes('about') ? 'text-danger text-20' : 'text-20'} href={'#'}>
+          <li>
+            <Link className={`${router.asPath.includes('about') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'about'}>
               About
             </Link>
           </li>
-          <li className="">
+          <li>
             <Button variant="contained">
-              <Typography>Login</Typography>
+              <Typography>
+                <Link href={'login'}>Login</Link>
+              </Typography>
             </Button>
           </li>
           <li>

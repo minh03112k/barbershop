@@ -5,7 +5,7 @@ import style from '../styles/Home.module.css';
 export default function HighLightProduct() {
   return (
     <>
-      <Typography variant="h3" align="center" className="my-4">
+      <Typography variant="h3" align="center" className="my-5">
         Highlight Product
       </Typography>
       <Box className="px-5">
