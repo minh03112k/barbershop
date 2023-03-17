@@ -24,8 +24,8 @@ export default function Login() {
   };
 
   return (
-    <Layout className={styles.loginPage}>
-      <Box className="h-100 d-flex align-items-center justify-content-center flex-column">
+    <Layout>
+      <Box className="h-100 d-flex align-items-center justify-content-center flex-column my-5">
         <Box className="p-2">
           <Typography variant='h4' className="text-center mx-5 mb-5 font-poppin-bold">Log in to your design account</Typography>
           <Box className={`${styles.customBox} d-flex align-items-center justify-content-center w-100 rounded-5 border border-dark text-center py-3`}>
