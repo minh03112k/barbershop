@@ -25,7 +25,7 @@ export default function Gallery() {
   };
   return (
     <Layout>
-      <Typography variant="h3" align="center" className="my-5">
+      <Typography variant='h3' align='center' className='my-5'>
         Our Haircut Gallery
       </Typography>
       <Box className="container">

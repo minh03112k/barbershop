@@ -5,10 +5,10 @@ import style from '../styles/HighLightProduct.module.css';
 export default function HighLightProduct() {
   return (
     <>
-      <Typography variant="h3" align="center" className="my-5">
+      <Typography variant='h3' align='center' className='my-5'>
         Highlight Product
       </Typography>
-      <Box className="container">
+      <Box className='container'>
         <Grid container spacing={4}>
           {Array.from(Array(8)).map((_, index) => (
             <Grid key={index} item md={4} lg={3} xs={12} sm={6}>
