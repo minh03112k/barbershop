@@ -7,7 +7,6 @@ const CustomInputBase = styled(InputBase)(({ theme }) => ({
     borderRadius: "12px",
     background: "transparent",
     padding: "0.5rem",
-    color: '#F5F5F5',
     "label + &": {
       marginTop: theme.spacing(1),
     },
