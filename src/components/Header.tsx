@@ -9,32 +9,32 @@ const Header = () => {
 
   return (
     <Box id="header" className={`${styles.header} bg-dark px-5`}>
-      <Box className="d-flex align-items-center justify-content-between">
+      <Box className="d-flex align-items-center justify-content-between container">
         <Box>Brand</Box>
         <ul className={`${styles.headerMenu}`}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
           <li>
-            <Link className={`${router.asPath.includes('home') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'home'}>
+            <Link className={`${router.asPath.includes('home') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'home'}>
               Home
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('booking') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'booking'}>
+            <Link className={`${router.asPath.includes('booking') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'booking'}>
               Booking
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('shop') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
+            <Link className={`${router.asPath.includes('shop') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
               Shop
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('gallery') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'gallery'}>
+            <Link className={`${router.asPath.includes('gallery') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'gallery'}>
               Gallery
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('about') ? 'text-danger' : ''} text-20 ${styles.headerItem}`} href={'about'}>
+            <Link className={`${router.asPath.includes('about') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'about'}>
               About
             </Link>
           </li>

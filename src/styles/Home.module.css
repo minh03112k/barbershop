@@ -2,10 +2,19 @@
   transition: transform 0.2s, box-shadow 0.2s;
   max-width: 500;
   flex-grow: 1;
-  background-color: #202020;
+  background-color: #f1efd8;
   box-sizing: 0px 2px 2px #0B101C;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.productContainer p {
+  color: #0B101C;
+}
+
+.productContainer a {
+  color: #b90281;
+  font-weight: bold;
 }
 
 .productContainer:hover {
