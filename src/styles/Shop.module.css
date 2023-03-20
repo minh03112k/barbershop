@@ -3,7 +3,7 @@
   /* max-width: 500; */
   /* min-height: 300px; */
   flex-grow: 1;
-  background-color: #202020;
+  background-color: #f1efd8;
   box-sizing: 0px 2px 2px #0B101C;
   border-radius: 8px;
   cursor: pointer;
@@ -14,6 +14,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.productContainer p {
+  color: #0B101C;
+}
+
+.productContainer a {
+  color: #b90281;
+  font-weight: bold;
 }
 
 .productsList li {
@@ -82,11 +91,17 @@
   display: table-cell;
   vertical-align: middle;
   height: 100%;
-  color: #fff;
+  color: #FFF !important;
   font-size: 0.875rem;
   padding: 0.25rem;
   margin: 0;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 1440px) {
+  .imageDescription {
+    font-size: 0.825rem;
+  }
 }
 
 .productContainer:hover {
