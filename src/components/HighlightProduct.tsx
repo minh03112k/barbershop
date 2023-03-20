@@ -1,6 +1,6 @@
 import { Typography, Box, Grid, Paper } from '@mui/material';
 import Link from 'next/link';
-import style from '../styles/Home.module.css';
+import style from '../styles/HighLightProduct.module.css';
 
 export default function HighLightProduct() {
   return (
