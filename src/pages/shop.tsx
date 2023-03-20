@@ -11,7 +11,7 @@ export default function Shop() {
     return productsImages.map((item, index) => {
       return (
         <Grid key={index} item md={4} xs={12} sm={6}>
-        <Paper className={style.productContainer}>
+        <Box className={style.productContainer}>
           <Box className={style.imageContainer}>
             <img src={item.image} className={style.imgItem} />
             <Box className={style.imageOverlay}>
@@ -25,7 +25,7 @@ export default function Shop() {
             <Link href={'#'}>Fiber Pomade</Link>
             <Typography>$19.95</Typography>
           </Box>
-        </Paper>
+        </Box>
       </Grid>
       );
     });
