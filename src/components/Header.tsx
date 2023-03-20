@@ -19,9 +19,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('booking') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'booking'}>
+            <span className={`${router.asPath.includes('booking') ? 'text-primary' : ''} text-20 ${styles.headerItem}`}>
               Booking
-            </Link>
+            </span>
           </li>
           <li>
             <Link className={`${router.asPath.includes('shop') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
