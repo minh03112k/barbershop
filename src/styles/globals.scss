@@ -1,4 +1,4 @@
-@import './variable';
+@import './variable.module.scss';
 
 html {
   width: 100%;
@@ -93,8 +93,20 @@ html {
       background: $black-700;
     }
   }
-
   .carousel-caption {
     bottom: 50%;
+  }
+
+  //custom bootstrap
+  .bg-light {
+    background-color: $light !important;
+  }
+
+  .bg-dark {
+    background-color: $black-600 !important;
+  }
+
+  .text-primary {
+    color: #b90281 !important;
   }
 }

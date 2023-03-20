@@ -2,7 +2,6 @@ import '../styles/globals.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import type { AppProps } from 'next/app';
 import { useEffect, useState } from 'react';
-import '../styles/custom-bootstrap.scss';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [headerHeight, setHeaderHeight] = useState<number>(0);
