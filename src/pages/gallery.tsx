@@ -25,16 +25,16 @@ export default function Gallery() {
   };
   return (
     <Layout>
-      <Typography variant="h3" align="center" className="my-5">
+      <Typography variant='h3' align='center' className='my-5'>
         Our Haircut Gallery
       </Typography>
-      <Grid container spacing={1} className="container my-5">
+      <Grid container spacing={1} className='container my-5'>
         {renderGalleryImages()}
       </Grid>
-      <Typography variant="h3" align="center" className="my-5">
+      <Typography variant='h3' align='center' className='my-5'>
         Our Products Gallery
       </Typography>
-      <Grid container spacing={1} className="container my-5">
+      <Grid container spacing={1} className='container my-5'>
         {renderProductsImages()}
       </Grid>
     </Layout>

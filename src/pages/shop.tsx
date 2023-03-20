@@ -11,11 +11,11 @@ export default function Shop() {
     return productsImages.map((item, index) => {
       return (
         <Grid key={index} item md={4} xs={12} sm={6}>
-        <Paper className={`${style.productContainer}`}>
-          <Box className={`${style.imageContainer}`}>
-            <img src={`${item.image}`} className={`${style.imgItem}`} />
-            <Box className={`${style.imageOverlay}`}>
-              <Typography className={`${style.imageDescription}`} align="left">
+        <Paper className={style.productContainer}>
+          <Box className={style.imageContainer}>
+            <img src={item.image} className={style.imgItem} />
+            <Box className={style.imageOverlay}>
+              <Typography className={style.imageDescription} align="left">
                 Fiber Pomade 4 oz. <br /> Strength: Pliable, flexible hold pomade <br /> Shine: Low shine Base: Water soluble <br /> Best For: Men of all hair types looking for a volumizing,
                 texturizing pomade that can be restyled throughout the day <br /> The Reuzel Fiber Pomade has a vanilla mint fragrance and can be applied to wet hair for increased shine.
               </Typography>

@@ -8,8 +8,8 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <Box id="header" className={`${styles.header} bg-dark px-5`}>
-      <Box className="d-flex align-items-center justify-content-between container">
+    <Box id='header' className={`${styles.header} bg-dark px-5`}>
+      <Box className='d-flex align-items-center justify-content-between container'>
         <Box>Brand</Box>
         <ul className={`${styles.headerMenu}`}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
@@ -39,14 +39,14 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Button variant="contained">
+            <Button variant='contained'>
               <Typography>
                 <Link href={'login'}>Login</Link>
               </Typography>
             </Button>
           </li>
           <li>
-            <Button variant="outlined">
+            <Button variant='outlined'>
               <Typography>Sign up</Typography>
             </Button>
           </li>
