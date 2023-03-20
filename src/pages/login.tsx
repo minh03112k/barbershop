@@ -69,7 +69,7 @@ export default function Login() {
           </Button>
           <div className={`${styles.separator} my-4`} />
           <Link href={'#'}>
-            <h4 className="font-poppins fw-normal text-center"><Typography>Don’t have an account?</Typography></h4>
+            <h4 className="font-poppins fw-normal text-center"><Typography>Dont have an account?</Typography></h4>
           </Link>
         </Box>
       </Box>

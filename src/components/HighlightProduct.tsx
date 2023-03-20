@@ -20,7 +20,7 @@ export default function HighLightProduct() {
                   </Typography>
                   <Typography paragraph>
                     • Creates a moldable, flexible hold of natural clay with a matte finish and is used to manipulate the hair into any style. <br/>
-                    • Won't weigh hair down.<br/>
+                    • Wont weigh hair down.<br/>
                     • Works on all hair types.<br/>
                   </Typography>
                   <Link href={''}>View Detail</Link>

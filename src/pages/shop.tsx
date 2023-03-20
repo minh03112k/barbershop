@@ -42,7 +42,7 @@ export default function Shop() {
               <Typography variant="h4">All</Typography>
               <Box className="p-3 bg-black">
                 <Typography paragraph>
-                  Pleased to grease you! Shop all of Reuzel's finest hair and grooming products for men. Pomades, tonics, shampoos, conditioners, beard, skin care and more. Welcome to the greasiest
+                  Pleased to grease you! Shop all of Reuzels finest hair and grooming products for men. Pomades, tonics, shampoos, conditioners, beard, skin care and more. Welcome to the greasiest
                   corner of the internet!
                 </Typography>
               </Box>
