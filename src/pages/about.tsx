@@ -10,7 +10,9 @@ export default function About() {
       <Typography variant="h2" align="center" className="my-5">
         Our Story
       </Typography>
-      <CustomDivider className="my-5 container" />
+      <Box className='container my-5'>
+        <CustomDivider />
+      </Box>
       <Box className="container">
         <Box className="my-5">
           <Typography variant="h2">Reuzel. Spelled with a Z. Pronounced with a middle finger.</Typography>
@@ -41,7 +43,9 @@ export default function About() {
           </Typography>
         </Box>
       </Box>
-      <CustomDivider className="my-5 container" />
+      <Box className='container my-5'>
+        <CustomDivider />
+      </Box>
     </Layout>
   );
 }
