@@ -1,4 +1,5 @@
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import '../styles/custom-bootstrap.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import type { AppProps } from 'next/app';
 import { useEffect, useState } from 'react';

@@ -14,27 +14,27 @@ const Header = () => {
         <ul className={`${styles.headerMenu}`}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
           <li>
-            <Link className={`${router.asPath.includes('home') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'home'}>
+            <Link className={`${router.asPath.includes('home') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`} href={'home'}>
               Home
             </Link>
           </li>
           <li>
-            <span className={`${router.asPath.includes('booking') ? 'text-primary' : ''} text-20 ${styles.headerItem}`}>
+            <span className={`${router.asPath.includes('booking') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`}>
               Booking
             </span>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('shop') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
+            <Link className={`${router.asPath.includes('shop') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`} href={'shop'}>
               Shop
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('gallery') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'gallery'}>
+            <Link className={`${router.asPath.includes('gallery') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`} href={'gallery'}>
               Gallery
             </Link>
           </li>
           <li>
-            <Link className={`${router.asPath.includes('about') ? 'text-primary' : ''} text-20 ${styles.headerItem}`} href={'about'}>
+            <Link className={`${router.asPath.includes('about') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`} href={'about'}>
               About
             </Link>
           </li>
