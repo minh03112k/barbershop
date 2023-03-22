@@ -7,7 +7,7 @@ export default function Gallery() {
   const renderGalleryImages = () => {
     return haircutImages.map((item, index) => {
       return (
-        <Grid key={index} item xs={3}>
+        <Grid key={index} item xs={12} sm={6} md={4} lg={3} >
           <img style={{ maxWidth: '100%', minHeight: '100%' }} src={`${item.image}`} />
         </Grid>
       );
@@ -17,7 +17,7 @@ export default function Gallery() {
   const renderProductsImages = () => {
     return productsImages.map((item, index) => {
       return (
-        <Grid key={index} item xs={3}>
+        <Grid key={index} item xs={12} sm={6} md={4} lg={3} >
           <img style={{ maxWidth: '100%', minHeight: '100%' }} src={`${item.image}`} />
         </Grid>
       );

@@ -14,7 +14,7 @@ export default function About() {
       </Box>
       <Box className="container">
         <Box className="my-5">
-          <Typography variant="h2">Reuzel. Spelled with a Z. Pronounced with a middle finger.</Typography>
+          <Typography variant="h3">Reuzel. Spelled with a Z. Pronounced with a middle finger.</Typography>
           <Typography paragraph>
             Like every good story, this one starts in an alley. With two men in love with barbering. Sotted in style. And drowning under the influences of rock ‘n roll, kustom culture and the working
             class ethic of Rotterdam.
