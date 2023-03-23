@@ -1,17 +1,26 @@
-import { Button, colors, InputBase, TextField, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Box, Button, Drawer, Paper, SwipeableDrawer, Typography } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '../styles/Header.module.css';
+import { BiMenu } from 'react-icons/bi';
+import { useState } from 'react';
+import CustomBox from './CustomComponentMUI/CustomBox';
 
 const Header = () => {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleDrawer = (open: any) => (event: any) => {
+    if (event?.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+    setIsOpen(open);
+  };
   return (
     <Box id='header' className={`${styles.header} bg-dark px-5`}>
       <Box className='d-flex align-items-center justify-content-between container'>
         <Box>Brand</Box>
-        <ul className={`${styles.headerMenu}`}>
+        <ul className={`${styles.headerMenu} d-xl-flex d-none`}>
           {/* Todo: Custom Linl Component by Higher Order Function */}
           <li>
             <Link className={`${router.asPath.includes('home') ? 'text-text-purple' : ''} text-20 ${styles.headerItem}`} href={'home'}>
@@ -51,6 +60,14 @@ const Header = () => {
             </Button>
           </li>
         </ul>
+        <Box className='position-relative'>
+          <BiMenu />
+          {/* <Paper sx={{position: 'absolute', top: '30px'}}>
+            <ul>
+              <li>Home</li>
+            </ul>
+          </Paper> */}
+        </Box>
       </Box>
     </Box>
   );

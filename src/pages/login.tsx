@@ -1,4 +1,4 @@
-import CustomInputBase from '@/components/CustomInputBase';
+import CustomInputBase from '@/components/CustomComponentMUI/CustomInputBase';
 import { Box, Button, Checkbox, FormControlLabel, InputLabel, Typography } from '@mui/material';
 import Link from 'next/link';
 import { useState } from 'react';
