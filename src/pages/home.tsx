@@ -1,9 +1,9 @@
 import React from 'react';
-import { Box } from '@mui/system';
 import HighLightProduct from '@/components/HighlightProduct';
 import Typography from '@mui/material/Typography';
 import HighlightGallery from '@/components/HighlightGallery';
 import Layout from '@/components/Layout';
+import { Box } from '@mui/material';
 
 export default function HomePage() {
  
