@@ -1,4 +1,4 @@
-import CustomDivider from '@/components/CustomDivider';
+import CustomDivider from '@/components/CustomComponentMUI/CustomDivider';
 import Layout from '@/components/Layout';
 import { Box, Divider, Typography } from '@mui/material';
 

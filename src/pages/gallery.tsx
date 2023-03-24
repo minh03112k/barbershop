@@ -26,7 +26,7 @@ export default function Gallery() {
   return (
     <Layout>
       <Typography variant='h3' align='center' className='my-5'>
-        Our Haircut Gallery
+        Haircut Gallery
       </Typography>
       <Box className="container">
         <Grid container spacing={1} className="my-5">
@@ -34,7 +34,7 @@ export default function Gallery() {
         </Grid>
       </Box>
       <Typography variant="h3" align="center" className="my-5">
-        Our Products Gallery
+        Products Gallery
       </Typography>
       <Box className="container">
         <Grid container spacing={1} className="my-5">
