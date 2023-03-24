@@ -2,12 +2,12 @@ import { InputBase } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const CustomInputBase = styled(InputBase)(({ theme }) => ({
-  "& .MuiInputBase-input": {
-    border: "1px solid rgba(102, 102, 102, 0.35)",
-    borderRadius: "12px",
-    background: "transparent",
-    padding: "0.5rem",
-    "label + &": {
+  '& .MuiInputBase-input': {
+    border: '1px solid rgba(102, 102, 102, 0.35)',
+    borderRadius: '12px',
+    background: '#F5F5F5',
+    padding: '0.5rem',
+    'label + &': {
       marginTop: theme.spacing(1),
     },
     '&:focus': {
