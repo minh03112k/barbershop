@@ -14,7 +14,7 @@ export default function Booking() {
           </Grid>
           <Grid item xs={6}>
             <Typography>Email</Typography>
-            <CustomTextField label="Custom CSS" id="custom-css-outlined-input" />
+            <CustomTextField variant="standard" label="Custom CSS" id="custom-css-outlined-input" />
           </Grid>
         </Grid>
       </Box>
