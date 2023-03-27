@@ -45,7 +45,7 @@ export default function Login() {
           </Box>
           <Box>
             <InputLabel htmlFor='email-input'><Typography>Email address</Typography></InputLabel>
-            <CustomInputBase type='email' className='w-100' onChange={(event) => handleEmailChange(event.target.value)} />
+            <CustomInputBase type='email' className='w-100' onChange={(event:any) => handleEmailChange(event.target.value)} />
           </Box>
           <Box className='my-3'>
             <Box className='d-flex justify-content-between align-items-center mb-2'>
@@ -58,7 +58,7 @@ export default function Login() {
                 )}
               </InputLabel>
             </Box>
-            <CustomInputBase type={showPassword ? 'text' : 'password'} className='w-100' onChange={(event) => handlePasswordChange(event.target.value)} />
+            <CustomInputBase type={showPassword ? 'text' : 'password'} className='w-100' onChange={(event:any) => handlePasswordChange(event.target.value)} />
           </Box>
           <p className='text-end'>
             <Link href='#'><span>Forget your password</span></Link>
