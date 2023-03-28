@@ -114,13 +114,13 @@ export default function Booking() {
                 sx={{ color: '#F5F5F5' }}
                 id="demo-simple-select-label-date"
               >
-                Booking Date
+                Location
               </InputLabel>
               <Select
                 labelId="demo-simple-select-label-date"
                 id="demo-simple-select-date"
                 value={bookingDate}
-                label="Booking Date"
+                label="Location"
                 onChange={handleChangeBookingDate}
                 sx={{
                   '& fieldset': {
