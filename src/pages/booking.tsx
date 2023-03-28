@@ -1,35 +1,37 @@
-import CustomInputBase from '@/components/CustomComponentMUI/CustomInputBase';
 import CustomTextField from '@/components/CustomComponentMUI/CustomTextField';
 import Layout from '@/components/Layout';
 import {
   Box,
+  Button,
   FormControl,
-  FormLabel,
   Grid,
   InputLabel,
   MenuItem,
-  OutlinedInput,
   Select,
-  TextField,
-  Typography,
 } from '@mui/material';
 import { bookingHours } from '@/utils/mock';
-import CustomSelect from '../components/CustomComponentMUI/CustomSelect';
-import { useState } from 'react';
 import React from 'react';
-import CustomInputLabel from '@/components/CustomComponentMUI/CustomInputLabel';
+import BookingDate from '@/components/BookingDate';
 
 export default function Booking() {
   const [hour, setHour] = React.useState('');
-  const handleChange = (event: { target: { value: string } }) => {
+  const [bookingDate, setBookingDate] = React.useState('');
+
+  const handleChangeBookingHour = (event: { target: { value: string } }) => {
     setHour(event.target.value);
+  };
+  const handleChangeBookingDate = (event: { target: { value: string } }) => {
+    setBookingDate(event.target.value);
   };
 
   return (
     <Layout>
-      <Box className="container my-5 w-100">
-        <Grid container spacing={4} sx={{ width: '100%' }}>
-          <Grid item xs={6}>
+      <Box
+        className="container my-5 w-100"
+        sx={{ minHeight: '100svh' }}
+      >
+        <Grid container spacing={5} sx={{ width: '100%' }}>
+          <Grid item xs={12} sm={6}>
             <CustomTextField
               variant="standard"
               label="Email"
@@ -37,7 +39,7 @@ export default function Booking() {
               fullWidth
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <CustomTextField
               variant="standard"
               label="Fullname"
@@ -45,7 +47,7 @@ export default function Booking() {
               fullWidth
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <CustomTextField
               variant="standard"
               label="Phone Number"
@@ -54,7 +56,7 @@ export default function Booking() {
               fullWidth
             />
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={6}>
             <CustomTextField
               variant="standard"
               label="Address"
@@ -62,29 +64,7 @@ export default function Booking() {
               fullWidth
             />
           </Grid>
-          <Grid item xs={6}>
-            {/* <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">
-                Booking hour
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={hour}
-                onChange={handleChange}
-                className="custom-text-field"
-                input={<OutlinedInput />}
-              >
-                <MenuItem value="" disabled>
-                  Select an option
-                </MenuItem>
-                {bookingHours.map((item: any, index: number) => (
-                  <MenuItem key={index} value={item.value}>
-                    {item.label}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl> */}
+          <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
               <InputLabel
                 sx={{ color: '#F5F5F5' }}
@@ -97,10 +77,10 @@ export default function Booking() {
                 id="demo-simple-select"
                 value={hour}
                 label="Booking Hour"
-                onChange={handleChange}
+                onChange={handleChangeBookingHour}
                 sx={{
                   '& fieldset': {
-                    borderColor: '#F5F5F5',
+                    borderColor: 'rgba(255,255,255,.14)',
                   },
                   '&:hover fieldset': {
                     borderColor: '#F5F5F5 !important',
@@ -108,9 +88,6 @@ export default function Booking() {
                   '& .MuiSvgIcon-root': {
                     color: '#F5F5F5',
                   },
-                  // '&:hover .MuiSelect-root': {
-                  //   borderColor: '#80bdff',
-                  // },
                 }}
                 inputProps={{
                   sx: {
@@ -125,6 +102,52 @@ export default function Booking() {
                 ))}
               </Select>
             </FormControl>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <FormControl fullWidth>
+              <BookingDate />
+            </FormControl>
+          </Grid>
+          <Grid item xs={12}>
+            <FormControl fullWidth>
+              <InputLabel
+                sx={{ color: '#F5F5F5' }}
+                id="demo-simple-select-label-date"
+              >
+                Booking Date
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-label-date"
+                id="demo-simple-select-date"
+                value={bookingDate}
+                label="Booking Date"
+                onChange={handleChangeBookingDate}
+                sx={{
+                  '& fieldset': {
+                    borderColor: 'rgba(255,255,255,.14)',
+                  },
+                  '&:hover fieldset': {
+                    borderColor: '#F5F5F5 !important',
+                  },
+                  '& .MuiSvgIcon-root': {
+                    color: '#F5F5F5',
+                  },
+                }}
+                inputProps={{
+                  sx: {
+                    color: '#F5F5F5',
+                  },
+                }}
+              >
+                <MenuItem value={'1'}>location1</MenuItem>
+                <MenuItem value={'2'}>location2</MenuItem>
+              </Select>
+            </FormControl>
+          </Grid>
+          <Grid item xs={12}>
+            <Button fullWidth variant="contained">
+              Booking
+            </Button>
           </Grid>
         </Grid>
       </Box>

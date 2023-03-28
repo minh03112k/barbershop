@@ -110,7 +110,7 @@ html {
 .custom-text-field .MuiInput-underline:before,
 .custom-text-field .MuiInput-underline:hover:before {
 color: #F5F5F5;
-border-bottom-color: #F5F5F5;
+border-bottom-color: rgba(255,255,255,.14);
 }
 
 .custom-text-field .MuiInputLabel-root.Mui-focused {
