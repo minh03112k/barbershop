@@ -12,6 +12,7 @@ import {
 import { bookingHours } from '@/utils/mock';
 import React from 'react';
 import BookingDate from '@/components/BookingDate';
+import CustomSelect from '@/components/CustomComponentMUI/CustomSelect';
 
 export default function Booking() {
   const [hour, setHour] = React.useState('');
@@ -26,10 +27,7 @@ export default function Booking() {
 
   return (
     <Layout>
-      <Box
-        className="container my-5 w-100"
-        sx={{ minHeight: '100svh' }}
-      >
+      <Box className="container my-5 w-100" sx={{ minHeight: '100svh' }}>
         <Grid container spacing={5} sx={{ width: '100%' }}>
           <Grid item xs={12} sm={6}>
             <CustomTextField
@@ -66,41 +64,18 @@ export default function Booking() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <FormControl fullWidth>
-              <InputLabel
-                sx={{ color: '#F5F5F5' }}
-                id="demo-simple-select-label"
-              >
-                Booking Hour
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={hour}
-                label="Booking Hour"
+              <CustomSelect
                 onChange={handleChangeBookingHour}
-                sx={{
-                  '& fieldset': {
-                    borderColor: 'rgba(255,255,255,.14)',
-                  },
-                  '&:hover fieldset': {
-                    borderColor: '#F5F5F5 !important',
-                  },
-                  '& .MuiSvgIcon-root': {
-                    color: '#F5F5F5',
-                  },
-                }}
-                inputProps={{
-                  sx: {
-                    color: '#F5F5F5',
-                  },
-                }}
+                labelId="booking-hour-label"
+                labelSelect="Booking Hour"
+                valueSelect={hour}
               >
                 {bookingHours.map((item: any, index: number) => (
                   <MenuItem key={index} value={item.value}>
                     {item.label}
                   </MenuItem>
                 ))}
-              </Select>
+              </CustomSelect>
             </FormControl>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -110,38 +85,15 @@ export default function Booking() {
           </Grid>
           <Grid item xs={12}>
             <FormControl fullWidth>
-              <InputLabel
-                sx={{ color: '#F5F5F5' }}
-                id="demo-simple-select-label-date"
-              >
-                Location
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label-date"
-                id="demo-simple-select-date"
-                value={bookingDate}
-                label="Location"
-                onChange={handleChangeBookingDate}
-                sx={{
-                  '& fieldset': {
-                    borderColor: 'rgba(255,255,255,.14)',
-                  },
-                  '&:hover fieldset': {
-                    borderColor: '#F5F5F5 !important',
-                  },
-                  '& .MuiSvgIcon-root': {
-                    color: '#F5F5F5',
-                  },
-                }}
-                inputProps={{
-                  sx: {
-                    color: '#F5F5F5',
-                  },
-                }}
+              <CustomSelect
+                onChange={handleChangeBookingHour}
+                labelId="booking-date-label"
+                labelSelect="Booking Date"
+                valueSelect={bookingDate}
               >
                 <MenuItem value={'1'}>location1</MenuItem>
                 <MenuItem value={'2'}>location2</MenuItem>
-              </Select>
+              </CustomSelect>
             </FormControl>
           </Grid>
           <Grid item xs={12}>

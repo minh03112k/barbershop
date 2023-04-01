@@ -1,24 +1,49 @@
-import { InputBase } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import React from 'react';
 
- const CustomSelect = styled(InputBase)(({ theme }) => ({
-  // 'label + &': {
-  //   marginTop: theme.spacing(3),
-  // },
-  '& .MuiInputBase-input': {
-    backgroundColor: 'transparent',
-    border: '1px solid #F5F5F5',
-    color: '#F5F5F5',
-    // padding: '10px 26px 10px 12px',
-    '&:focus': {
-      borderRadius: 4,
-      borderColor: '#80bdff',
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
-    },
-  },
-  '& .MuiSvgIcon-root': {
-    color: '#F5F5F5'
-  }
-}));
+interface ICustomSelect {
+  labelId: string;
+  labelSelect: string;
+  valueSelect: any;
+  onChange: (event: SelectChangeEvent<any>, child: React.ReactNode) => void;
+  children: React.ReactNode
+}
+
+const CustomSelect = (props: ICustomSelect) => {
+  const { labelId, labelSelect, valueSelect, onChange, children } = props;
+
+  return (
+    <React.Fragment>
+      <InputLabel sx={{ color: '#F5F5F5' }} id={labelId}>
+        {labelSelect}
+      </InputLabel>
+      <Select
+        labelId={labelId}
+        id="demo-simple-select"
+        value={valueSelect}
+        label="Booking Hour"
+        onChange={onChange}
+        sx={{
+          '& fieldset': {
+            borderColor: 'rgba(255,255,255,.14)',
+          },
+          '&:hover fieldset': {
+            borderColor: '#F5F5F5 !important',
+          },
+          '& .MuiSvgIcon-root': {
+            color: '#F5F5F5',
+          },
+        }}
+        inputProps={{
+          sx: {
+            color: '#F5F5F5',
+          },
+        }}
+      >
+        {children}
+      </Select>
+    </React.Fragment>
+  );
+};
 
 export default CustomSelect;
