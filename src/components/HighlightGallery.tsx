@@ -21,17 +21,17 @@ export default function HighlightGallery() {
     <Carousel>
       <Carousel.Item>
         <Image src={'/img/products.jpg'} width={screenWidth} height={screenHeight} style={{ objectFit: 'cover', overflow: 'hidden' }} alt="img" />
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <Typography variant="h2">FINE HAIR GROOMING BOX </Typography>
           <Typography paragraph>Nulla vitae elit libero, a pharetra augue mollis interdum.</Typography>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
         <Image src={'/img/products2.jpg'} width={screenWidth} height={screenHeight} style={{ objectFit: 'cover', overflow: 'hidden' }} alt="img" />
-        <Carousel.Caption>
+        {/* <Carousel.Caption>
           <Typography variant="h2">Ho-Ho-Ho | hair cream</Typography>
           <Typography paragraph>Nulla vitae elit libero, a pharetra augue mollis interdum.</Typography>
-        </Carousel.Caption>
+        </Carousel.Caption> */}
       </Carousel.Item>
     </Carousel>
   );

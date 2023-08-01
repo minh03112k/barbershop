@@ -75,3 +75,22 @@ export const productsImages = [
     description: 'Creates a long lasting, natural feeling hold with ease of application in a spray bottle! Perfect for blow-drying and protects hair from all types of thermal styling. Ideal for volume, lift & texture. Can be layered with virtually any other product.'
   },
 ]
+
+export const locations = [
+  { value: 'location1', label: 'Location 1' },
+  { value: 'location2', label: 'Location 2' },
+  { value: 'location3', label: 'Location 3' },
+];
+
+export const bookingHours = [
+  { value: 9, label: '9:00' },
+  { value: 10, label: '10:00' },
+  { value: 11, label: '11:00' },
+  { value: 12, label: '12:00' },
+  { value: 13, label: '13:00' },
+  { value: 14, label: '14:00' },
+  { value: 15, label: '15:00' },
+  { value: 16, label: '16:00' },
+  { value: 17, label: '17:00' },
+  { value: 18, label: '18:00' },
+];

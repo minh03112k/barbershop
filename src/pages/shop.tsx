@@ -2,7 +2,6 @@ import Layout from '@/components/Layout';
 import { Grid, Paper, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { productsImages } from '@/utils/mock';
-
 import Link from 'next/link';
 import style from '../styles/Shop.module.css';
 

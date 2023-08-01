@@ -29,13 +29,13 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <span
+            <Link href={'booking'}
               className={`${
                 router.asPath.includes('booking') ? 'text-purple' : ''
               } text-20 ${styles.headerItem}`}
             >
               Booking
-            </span>
+            </Link>
           </li>
           <li>
             <Link

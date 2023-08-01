@@ -57,13 +57,13 @@ export default function BurgerMenu() {
             </li>
             <li className="d-flex align-items-center mb-4">
               <BsCalendarEvent />
-              <span
+              <Link href={'/booking'}
                 className={`${
                   router.asPath.includes('booking') ? 'text-purple' : ''
                 } text-20 ms-3`}
               >
                 Booking
-              </span>
+              </Link>
             </li>
             <li className="d-flex align-items-center mb-4">
               <BsShop />
